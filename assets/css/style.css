@@ -22,6 +22,10 @@
       hsla(0, 0%, 100%, 0.251) 0%,
       hsla(0, 0%, 100%, 0) 100%),
     hsla(106, 31%, 81%, 0.408);
+  --bg-gradient-title: linear-gradient(to bottom right,
+      hsla(52, 100%, 47%, 0.182) 0%,
+      hsla(0, 0%, 100%, 0) 100%),
+    hsla(127, 96%, 33%, 0.223);
   --bg-gradient-navbar: linear-gradient(to bottom right,
       hsla(0, 0%, 100%, 0.251) 0%,
       hsla(0, 0%, 100%, 0) 100%),
@@ -45,15 +49,13 @@
   --jet: hsl(0, 4%, 65%); /* dot-connecting-line */
   --onyx: hsl(0, 0%, 100%);
   --eerie-black-1: hsl(0, 0%, 100%);
-  --eerie-black-2: #ffffff;
-  /* box-bg */
-  --smoky-black: hsl(0, 0%, 100%);
-  /* z:-1 bg */
+  --eerie-black-2: #ffffff; /* box-bg */
+  --smoky-black: hsl(0, 0%, 100%); /* z:-1 bg */
   --white-1: hsl(0, 0%, 0%);
   --white-2: hsl(0, 0%, 10%);
   --orange-yellow-crayola: hsl(134, 100%, 26%);
   --vegas-gold: hsl(139, 78%, 28%);
-  --light-gray: hsl(0, 0%, 48%);
+  --light-gray: hsl(0, 0%, 40%); /* text-color */ 
   --light-gray-70: hsla(0, 0%, 59%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
   --selection-bg: hsla(120, 100%, 50%, 0.196);
@@ -397,9 +399,9 @@ main {
 
 .info-content .title {
   color: var(--white-1);
-  background: var(--bg-gradient-jet);
+  background: var(--bg-gradient-title);
   font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-500);
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
@@ -519,7 +521,7 @@ main {
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.2),
-    rgba(27, 164, 57, 0.237),
+    rgba(27, 164, 57, 0.329),
     rgba(255, 255, 255, 0.2)
   );
   backdrop-filter: blur(12px);
@@ -1189,6 +1191,9 @@ main {
 
 .project-item {
   display: none;
+  padding: 6px;
+  border-radius: 16px;
+  background-color: var(--bg-gradient-navbar);
 }
 
 .project-item.active {
@@ -1214,7 +1219,7 @@ main {
   position: relative;
   width: 100%;
   height: 200px;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
   margin-bottom: 15px;
 }
@@ -2131,7 +2136,7 @@ Certificate
 
   .project-img,
   .blog-banner-box {
-    border-radius: 16px;
+    border-radius: 12px;
   }
 
   .blog-posts-list {

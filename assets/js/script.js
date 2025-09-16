@@ -130,8 +130,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-const viewURL = 'https://drive.google.com/file/d/16NfNF5qKVOkM5n2Sb2mXvniGiPmb1QPZ/view?usp=sharing';
-const downloadURL = 'https://drive.google.com/uc?export=download&id=16NfNF5qKVOkM5n2Sb2mXvniGiPmb1QPZ';
+const viewURL = 'https://drive.google.com/file/d/1f244u5_xS5hMAMYO86N2MGJSu3jx8G0c/view?usp=sharing';
+const downloadURL = 'https://drive.google.com/uc?export=download&id=1f244u5_xS5hMAMYO86N2MGJSu3jx8G0c';
 
 // View resume on new tab aside
 document.getElementById('asideDownloadResume').addEventListener('click', function() {
